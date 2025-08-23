@@ -8,11 +8,14 @@ export default function Navbar() {
           Ana María Rangel
         </a>
         <nav className='flex gap-6 text-sm'>
-          <a href='#about' className='hover:underline'>
-            About
+          <a href='#hero' className='hover:underline'>
+            Inicio
           </a>
-          <a href='#portfolio' className='hover:underline'>
-            Portfolio
+          <a href='#servicios' className='hover:underline'>
+            Servicios
+          </a>
+          <a href='#sobreami' className='hover:underline'>
+            Sobre mí
           </a>
           <a href='#contact' className='hover:underline'>
             Contact

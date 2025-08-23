@@ -1,23 +1,26 @@
 export const projects = [
   {
-    title: 'Case Study: Brand Voice Refresh',
-    blurb: 'Tone audit, messaging pillars, and web copy across key pages.',
-    image: '/work/brand-voice.jpg',
-    href: '#',
-    tags: ['Content Design', 'Copy'],
+    title: "Copywriting",
+    blurb:
+      "Textos que conectan y convierten. Desde páginas web hasta campañas publicitarias con resultados medibles.",
+    image: "/copy-writing.svg",
+    href: "#",
+    tags: ["Content Design", "Copy"],
   },
   {
-    title: 'UX Writing: Onboarding',
-    blurb: 'Reduced drop-off by clarifying microcopy and empty states.',
-    image: '/work/onboarding.jpg',
-    href: '#',
-    tags: ['UX Writing'],
+    title: "Content Design",
+    blurb:
+      "Experiencias de contenido que simplifican lo complejo y guían a la acción.",
+    image: "/content-design.svg",
+    href: "#",
+    tags: ["UX Writing"],
   },
   {
-    title: 'Blog Editorial System',
-    blurb: 'Built an editorial workflow and SEO briefs for the content team.',
-    image: '/work/editorial.jpg',
-    href: '#',
-    tags: ['Strategy', 'SEO'],
+    title: "Content Strategy",
+    blurb:
+      "Estrategias basadas en datos que posicionan tu marca y crean conexiones auténticas.",
+    image: "/content-strategy.svg",
+    href: "#",
+    tags: ["Strategy", "SEO"],
   },
-]
+];
