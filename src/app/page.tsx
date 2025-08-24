@@ -125,15 +125,15 @@ export default function HomePage() {
         <div className='flex gap-8'>
           <a
             href='mailto:anamariarangel22@outlook.com'
-            className='lets-work-together-btn'>
+            className='lets-work-together-btn text-left'>
             Enviar un correo
           </a>
           <a
             href='https://www.linkedin.com/in/ana-maria-rangel-z-54723a158/'
-            className='lets-work-together-btn'
+            className='lets-work-together-btn text-left'
             target='_blank'
             rel='noopener noreferrer'>
-            Connectar por Linkedin
+            Contactar por Linkedin
           </a>
         </div>
       </section>
