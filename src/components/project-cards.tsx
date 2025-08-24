@@ -47,7 +47,7 @@ export default function ProjectCard({
 
         <Link
           href={href}
-          className='mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-foreground/90 hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary rounded-sm'
+          className='mt-4 inline-flex hover:underline items-center gap-1.5 text-sm font-medium text-foreground/90 hover:text-foreground focus:outline-none focus:ring-2 focus:ring-primary rounded-sm'
           aria-label={`${cta}: ${title}`}
           target='_blank'
           rel='noreferrer'>
