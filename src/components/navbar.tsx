@@ -17,8 +17,11 @@ export default function Navbar() {
           <a href='#sobreami' className='nav-link'>
             Sobre mí
           </a>
+          <a href='#proyectos' className='nav-link'>
+            Proyectos
+          </a>
           <a href='#contact' className='nav-link'>
-            Contact
+            Contacto
           </a>
         </nav>
       </div>
