@@ -4,7 +4,7 @@ type Props = {
   title: string;
   blurb: string;
   image: string;
-  href?: string;
+  href?: string | null;
   tags?: string[];
 };
 
@@ -15,6 +15,7 @@ export default function ProjectCard({ title, blurb, image, href }: Props) {
              ring-1 ring-gray-200/40 backdrop-blur 
              transition duration-300 transform 
              hover:scale-105
+             hover:cursor-pointer
              overflow-hidden bg-white text-center p-8 text-card-foreground mt-8'>
       <div className='flex flex-col items-center justify-center pb-4'>
         <Image src={image} alt={title} width={80} height={80} priority />

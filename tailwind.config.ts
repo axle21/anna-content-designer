@@ -5,6 +5,8 @@ const config: Config = {
     "./src/app/**/*.{ts,tsx}",
     "./src/components/**/*.{ts,tsx}",
     "./src/*.{ts,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}", // if you also use App Router
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // if your code lives under /src
   ],
   theme: {
     extend: {

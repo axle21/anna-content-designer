@@ -7,17 +7,17 @@ export default function Navbar() {
         <a href='#' className='font-bold text-lg'>
           Ana María Rangel
         </a>
-        <nav className='flex gap-6 text-sm'>
-          <a href='#hero' className='hover:underline'>
+        <nav className='hidden md:flex gap-6 text-sm'>
+          <a href='#hero' className='nav-link'>
             Inicio
           </a>
-          <a href='#servicios' className='hover:underline'>
+          <a href='#servicios' className='nav-link'>
             Servicios
           </a>
-          <a href='#sobreami' className='hover:underline'>
+          <a href='#sobreami' className='nav-link'>
             Sobre mí
           </a>
-          <a href='#contact' className='hover:underline'>
+          <a href='#contact' className='nav-link'>
             Contact
           </a>
         </nav>

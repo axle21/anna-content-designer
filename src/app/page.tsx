@@ -1,7 +1,6 @@
-"use client";
-
-import ProjectCard from "@/components/project-card";
-import { projects } from "@/data/projects";
+import ServicesCard from "@/components/services-card";
+import ProjectsCard from "@/components/project-cards";
+import { services, projects } from "@/data/projects";
 import Image from "next/image";
 import Typewriter from "@/components/Typewriter";
 
@@ -41,8 +40,8 @@ export default function HomePage() {
         </div>
 
         <div className='mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3'>
-          {projects.map((p) => (
-            <ProjectCard key={p.title} {...p} />
+          {services.map((p) => (
+            <ServicesCard key={p.title} {...p} />
           ))}
         </div>
       </section>
@@ -92,6 +91,23 @@ export default function HomePage() {
               />
             </div>
           </div>
+        </div>
+      </section>
+      {/* project */}
+      <section id='proyectos' className='p-12 md:p-20 project-section'>
+        <div className='flex flex-col items-center justify-center text-center gap-8 mb-8 '>
+          <h2 className='text-3xl font-extrabold tracking-tight sm:text-4xl'>
+            Proyectos
+          </h2>
+          <p className='text-muted max-w-2xl text-lg'>
+            Conoce algunos de los proyectos en donde mi experiencia y
+            conocimientos han impactado de manera positiva los resultados.
+          </p>
+        </div>
+        <div className='mx-auto max-w-6xl px-4 md:px-6 grid grid-cols-1 gap-6 md:grid-cols-2'>
+          {projects.map((p) => (
+            <ProjectsCard key={p.title} {...p} />
+          ))}
         </div>
       </section>
 

@@ -18,7 +18,7 @@ export default function HeroTypewriter({
   deleteDelay = 20,
   pauseMs = 5000,
   cursor = "|",
-  loop = true,
+  loop = false,
 }: Props) {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
