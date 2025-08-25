@@ -9,7 +9,7 @@ type Props = {
 
 export default function HeroTypewriter({
   strings = [
-    "Mi superpoder está en hacer entender fácil lo difícil a través del contenido, logrando resultados medibles, teniendo como enfoque las personas usuarias.",
+    "Mi superpoder está en hacer entender fácil lo difícil a través del contenido, logrando resultados medibles.",
   ],
   typeDelay = 60,
   cursor = "|",
