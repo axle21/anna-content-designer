@@ -18,7 +18,7 @@ export default function HomePage() {
           Ux Content Designer & Copywriter
         </p>
         <div className='max-w-2xl mt-6 flex gap-3 p-5 rounded-3xl glass'>
-          <div className='text-2xl font-medium text-white whitespace-pre-line'>
+          <div className='text-2xl font-medium text-white whitespace-pre-line text-left'>
             <Typewriter />
           </div>
         </div>
