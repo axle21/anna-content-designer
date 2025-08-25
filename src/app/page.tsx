@@ -23,7 +23,7 @@ export default function HomePage() {
           </div>
         </div>
         <a href='#contact' className='lets-work-together-btn'>
-          Lets work together
+          Trabajemos juntos
         </a>
       </section>
 
@@ -118,19 +118,19 @@ export default function HomePage() {
         <h1 className='text-4xl font-bold tracking-tight text-white'>
           Contáctame y transformemos tu contenido
         </h1>
-        <p className='my-8 text-lg text-muted max-w-2xl text-white'>
+        <p className='my-8 text-lg text-muted max-w-2xl text-white text-left'>
           Hablemos de cómo puedo ayudarte a conectar con tus usuarios y lograr
           los resultados que buscas.
         </p>
         <div className='flex gap-8'>
           <a
             href='mailto:anamariarangel22@outlook.com'
-            className='lets-work-together-btn text-left'>
+            className='lets-work-together-btn '>
             Enviar un correo
           </a>
           <a
             href='https://www.linkedin.com/in/ana-maria-rangel-z-54723a158/'
-            className='lets-work-together-btn text-left'
+            className='lets-work-together-btn'
             target='_blank'
             rel='noopener noreferrer'>
             Contactar por Linkedin
