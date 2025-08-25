@@ -32,7 +32,7 @@ export default function ProjectCard({
           src={image}
           alt={title}
           fill
-          className='object-contain sm:object-cover'
+          className='object-unset sm:object-cover'
           sizes='(min-width: 768px) 50vw, 100vw'
           priority={false}
         />

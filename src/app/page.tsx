@@ -23,7 +23,7 @@ export default function HomePage() {
           </div>
         </div>
         <a href='#contact' className='lets-work-together-btn'>
-          Trabajemos juntos
+          Construyamos algo increíble
         </a>
       </section>
 
