@@ -31,7 +31,7 @@ export const projects = [
     title: "Rappi / Gifting Order Project",
     excerpt:
       "Nuestra nueva funcionalidad ofrece una solución para nuestros usuarios, ayudándoles a evitar las filas navideñas, el tráfico y las distancias.",
-    href: "https://anamariarangel22.wixsite.com/anarangel-contentdes/gifts-project/rappi-gifting-projectg",
+    href: "https://anamariarangel22.wixsite.com/anarangel-contentdes/gifts-project/rappi-gifting-project",
     image: "/project-image-1.png",
     cta: "Ver proyecto completo",
   },
