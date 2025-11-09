@@ -55,7 +55,7 @@ export const projects = [
     slug: "rappi-design-system",
     title: "Rappi / Design System / Content",
     excerpt:
-      "Co-creación del Design System y del Manual de Voz y Tono de la marca y su Guía de Estilo.",
+      "Cocreación del Design System, Manual de Voz y Tono de la marca y de su Guía de Estilo.",
     href: "/design-system",
     image: "/project-image-4.png",
   },

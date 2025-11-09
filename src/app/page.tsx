@@ -58,23 +58,13 @@ export default function HomePage() {
 
               <div className='space-y-4 text-muted text-lg leading-7'>
                 <p>
-                  Soy Content Designer con experiencia en{" "}
-                  <strong>Copywriting</strong> y <strong>SEO</strong> en
-                  contenidos; gracias a mi pasión por el diseño de experiencias
-                  y la creatividad, desde hace <strong>más de 7 años</strong> he
-                  ayudado a transformar ideas complejas en mensajes claros y
-                  poderosos que conectan las marcas con las personas.
+                  Soy Content Designer con experiencia en <strong>UX writing</strong>, <strong>Copywriting</strong> y <strong>SEO</strong>. Durante <strong>más de 7 años</strong>, mi pasión por el diseño de experiencias y la creatividad me ha permitido transformar ideas complejas en mensajes claros y poderosos que conectan marcas con personas.
                 </p>
                 <p>
-                  Mi enfoque va más allá de simplemente escribir bien. Entiendo
-                  a fondo a las personas usuarias, sus necesidades y
-                  motivaciones, y creo estrategias de contenido que se traducen
-                  en soluciones claras, accesibles y medibles.
+                  Mi enfoque va más allá de simplemente escribir bien. Busco entender a fondo a las personas usuarias, sus necesidades y motivaciones para crear estrategias de contenido, con soluciones claras, accesibles y medibles.
                 </p>
                 <p>
-                  En cada proyecto en el que he participado he respaldado que el
-                  contenido correcto en el momento indicado transforma los
-                  resultados de las marcas y los productos.
+                  En cada proyecto en el que he participado, el contenido correcto en el momento indicado aumenta las ventas del negocio, mejora la experiencia de las personas usuarias con sus productos y brinda soluciones de calidad.
                 </p>
               </div>
             </div>

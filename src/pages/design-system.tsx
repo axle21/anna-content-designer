@@ -1,8 +1,27 @@
+"use client";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import Image from "next/image";
 
 export default function DesignSystem() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const images = [
+    {
+      src: "/design-system-image-1.png",
+      alt: "SuperApp UX Writing Guidelines - Voz y tono del producto",
+    },
+    {
+      src: "/design-system-image-2.png",
+      alt: "Product Content - Consistencia y claridad en el contenido",
+    },
+    {
+      src: "/design-system-image-3.png",
+      alt: "Títulos y subtítulos - Guidelines para jerarquía de información",
+    },
+  ];
+
   return (
     <div className='min-h-screen bg-background text-foreground'>
       {/* Top bar */}
@@ -36,28 +55,19 @@ export default function DesignSystem() {
             </p>
 
             {/* Image trio */}
-            <div className='mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'>
-              <Image
-                src='/design-system-image-1.png'
-                alt='SuperApp UX Writing Guidelines - Voz y tono del producto'
-                width={400}
-                height={300}
-                className='w-full aspect-[4/3] object-cover rounded-xl shadow-sm border border-border'
-              />
-              <Image
-                src='/design-system-image-2.png'
-                alt='Product Content - Consistencia y claridad en el contenido'
-                width={400}
-                height={300}
-                className='w-full aspect-[4/3] object-cover rounded-xl shadow-sm border border-border'
-              />
-              <Image
-                src='/design-system-image-3.png'
-                alt='Títulos y subtítulos - Guidelines para jerarquía de información'
-                width={400}
-                height={300}
-                className='w-full aspect-[4/3] object-cover rounded-xl shadow-sm border border-border'
-              />
+            <div className='mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
+              {images.map((img, i) => (
+                <div key={i} className='flex justify-center'>
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={500}
+                    height={350}
+                    onClick={() => setSelectedImage(img.src)}
+                    className='w-full max-w-[520px] object-contain rounded-2xl shadow-md border border-border cursor-pointer transition-transform duration-300 hover:scale-[1.02]'
+                  />
+                </div>
+              ))}
             </div>
           </header>
 
@@ -68,50 +78,86 @@ export default function DesignSystem() {
                 El desafío
               </h2>
               <p className='text-base md:text-lg text-muted-foreground leading-relaxed'>
-                Durante mi tiempo en <strong>Rappi</strong>, identifiqué la
-                necesidad de crear consistencia en el contenido de la SuperApp.
-                Los equipos trabajaban de manera independiente, generando
-                experiencias fragmentadas para los usuarios en diferentes
-                mercados y productos.
+                <strong>Rappi</strong> es reconocida como una de las startups de
+                mayor crecimiento en Latinoamérica. Sin embargo, debido a la
+                rapidez de su crecimiento, sus procesos en los equipos de diseño
+                enfrentaban desafíos como la planeación de la estrategia; la
+                creación y el mantenimiento del contenido solían estar
+                desconectados entre proyectos y equipos, lo que generaba
+                inconsistencias y experiencias fragmentadas para los usuarios
+                dentro de la aplicación.
+              </p>
+            </div>
+
+            {/* Proceso */}
+            <div className='mt-10'>
+              <h2 className='text-2xl md:text-3xl font-bold tracking-tight mb-4'>
+                El proceso
+              </h2>
+              <p className='text-base md:text-lg text-muted-foreground leading-relaxed'>
+                La metodología incluyó{" "}
+                <strong>investigación con usuarios</strong>, análisis del
+                contenido existente, <strong>workshops colaborativos</strong>{" "}
+                con los equipos de diseño y producto, y{" "}
+                <strong>research continuo</strong> para validar la efectividad
+                de las directrices creadas. Además, junto con los design leads,
+                identificamos que ante la ausencia de más content designers era
+                necesario definir lineamientos claros que pudieran aplicarse en
+                cada proyecto.
+              </p>
+              <p className='text-base md:text-lg text-muted-foreground leading-relaxed mt-4'>
+                De esta forma, nos aseguramos de que los principios del{" "}
+                <strong>UX Content Design</strong> se mantuviesen vigentes en
+                cada flujo y experiencia, logrando una voz y un tono sólidos y
+                coherentes en los diferentes idiomas en los que vive la marca:{" "}
+                <strong>
+                  español (Latinoamérica), inglés y portugués (Brasil)
+                </strong>
+                .
               </p>
             </div>
 
             {/* La estrategia */}
-            <div>
-              <h2 className='text-2xl md:text-3xl font-bold tracking-tight mb-3'>
+            <div className='mt-10'>
+              <h2 className='text-2xl md:text-3xl font-bold tracking-tight mb-4'>
                 La estrategia
               </h2>
               <p className='text-base md:text-lg text-muted-foreground leading-relaxed mb-6'>
-                Co-creé un Design System de contenido integral que estableciera
-                las bases para la escalabilidad y consistencia en toda la
-                plataforma, enfocándome en tres pilares fundamentales:
+                A través de la creación del Design System se estableció la
+                creación de un contenido integral que sentara las bases para la
+                escalabilidad y consistencia en toda la plataforma, enfocándose
+                en tres pilares fundamentales:
               </p>
 
-              <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3'>
-                <div className='rounded-xl bg-card p-5'>
-                  <h3 className='font-semibold mb-2'>Manual de Voz y Tono</h3>
+              <ul className='space-y-5'>
+                <li>
+                  <p className='text-lg font-semibold mb-1'>
+                    Manual de Voz y Tono
+                  </p>
                   <p className='text-sm text-muted-foreground leading-relaxed'>
                     Definición de la personalidad de marca: cercana, directa y
-                    empática, con tono adaptativo según contexto.
+                    empática, con tono adaptado según el contexto.
                   </p>
-                </div>
-                <div className='rounded-xl bg-card p-5'>
-                  <h3 className='font-semibold mb-2'>Guía de Estilo</h3>
+                </li>
+
+                <li>
+                  <p className='text-lg font-semibold mb-1'>Guía de Estilo</p>
                   <p className='text-sm text-muted-foreground leading-relaxed'>
                     Estándares para microcopy, estructura narrativa,
-                    localización y accesibilidad del contenido.
+                    localización, traducciones y accesibilidad del contenido.
                   </p>
-                </div>
-                <div className='rounded-xl bg-card p-5'>
-                  <h3 className='font-semibold mb-2'>
+                </li>
+
+                <li>
+                  <p className='text-lg font-semibold mb-1'>
                     Componentes de Contenido
-                  </h3>
-                  <p className='text-sm text-muted-foreground leading-relaxed'>
-                    Templates reutilizables y patterns para casos de uso
-                    específicos en toda la SuperApp.
                   </p>
-                </div>
-              </div>
+                  <p className='text-sm text-muted-foreground leading-relaxed'>
+                    Templates reutilizables con patrones para casos de uso
+                    específicos en las diferentes secciones de la app.
+                  </p>
+                </li>
+              </ul>
             </div>
 
             {/* Beneficios */}
@@ -162,28 +208,30 @@ export default function DesignSystem() {
                 </div>
               </div>
             </div>
-
-            {/* Proceso */}
-            <div>
-              <h2 className='text-2xl md:text-3xl font-bold tracking-tight mb-3'>
-                El proceso
-              </h2>
-              <p className='text-base md:text-lg text-muted-foreground leading-relaxed'>
-                La metodología incluyó{" "}
-                <strong>investigación con usuarios</strong>, análisis del
-                contenido existente, <strong>workshops colaborativos</strong>{" "}
-                con equipos de diseño y producto, y testing continuo para
-                validar la efectividad de las nuevas directrices. El resultado
-                fue un lenguaje unificado implementado en{" "}
-                <strong>
-                  los países de habla hispana en donde tiene presencia la marca
-                </strong>
-                .
-              </p>
-            </div>
           </section>
         </article>
       </main>
+      {/* Modal */}
+      {selectedImage && (
+        <div
+          className='fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm'
+          onClick={() => setSelectedImage(null)}>
+          <div className='relative'>
+            <Image
+              src={selectedImage}
+              alt='Full view'
+              width={1000}
+              height={700}
+              className='max-h-[85vh] w-auto object-contain rounded-xl shadow-xl'
+            />
+            <button
+              onClick={() => setSelectedImage(null)}
+              className='absolute cursor-pointer top-2 right-2 bg-white/90 hover:bg-white rounded-full p-2 text-gray-800 font-bold text-sm shadow'>
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
