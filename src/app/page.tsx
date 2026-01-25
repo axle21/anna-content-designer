@@ -58,19 +58,16 @@ export default function HomePage() {
 
               <div className='space-y-4 text-muted text-lg leading-7'>
                 <p>
-                  Soy Content Designer con experiencia en <strong>UX writing</strong>, <strong>Copywriting</strong> y <strong>SEO</strong>. Durante <strong>más de 7 años</strong>, mi pasión por el diseño de experiencias y la creatividad me ha permitido transformar ideas complejas en mensajes claros y poderosos que conectan marcas con personas.
+                  Soy Content Designer especializada en UX writing, copywriting y SEO para productos y servicios digitales, con más de <strong>7 años de experiencia. Acompaño a equipos de producto, diseño y marketing a definir la voz, los mensajes y los flujos de contenido que hacen que las personas entiendan, confíen y actúen</strong>.
                 </p>
                 <p>
-                  Mi enfoque va más allá de simplemente escribir bien. Busco entender a fondo a las personas usuarias, sus necesidades y motivaciones para crear estrategias de contenido, con soluciones claras, accesibles y medibles.
-                </p>
-                <p>
-                  En cada proyecto en el que he participado, el contenido correcto en el momento indicado aumenta las ventas del negocio, mejora la experiencia de las personas usuarias con sus productos y brinda soluciones de calidad.
+                  Combino investigación, estrategia y redacción para diseñar contenidos claros, inclusivos y fáciles de medir, desde microcopys en interfaces hasta mensajes clave de campañas. Tras más de 7 años de experiencia, mi perfil no solo se centra en elegir las palabras correctas, sino también en integrar y adaptar el contenido a mercados y contextos locales e internacionales a través del inglés, además de diseñar y automatizar procesos que permiten escalar las soluciones de contenido sin perder calidad ni coherencia en la experiencia de las personas usuarias.
                 </p>
               </div>
             </div>
 
             {/* Image */}
-            <div className='relative aspect-[4/3] w-full max-w-[640px] overflow-hidden rounded-3xl shadow-lg ring-1 ring-black/5'>
+            <div className='relative aspect-[4/3] w-full max-w-[520px] overflow-hidden rounded-3xl shadow-lg ring-1 ring-black/5'>
               <Image
                 src='/anna-image.png'
                 alt='Foto de Ana'
